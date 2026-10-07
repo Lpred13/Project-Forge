@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     public float vitesse;
-    public float temps;
+    //public float temps;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -14,6 +14,6 @@ public class Ball : MonoBehaviour
     void Update()
     {
         this.transform.position += new Vector3(0,vitesse,0);
-        Object.Destroy(this.gameObject, temps);
     }
+
 }
